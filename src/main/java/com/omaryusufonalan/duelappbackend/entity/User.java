@@ -1,5 +1,6 @@
 package com.omaryusufonalan.duelappbackend.entity;
 
+import com.omaryusufonalan.duelappbackend.core.BaseEntity;
 import com.omaryusufonalan.duelappbackend.core.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,7 +14,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class User {
+public class User extends BaseEntity {
     @Column(nullable = false, updatable = false)
     private String username;
 
