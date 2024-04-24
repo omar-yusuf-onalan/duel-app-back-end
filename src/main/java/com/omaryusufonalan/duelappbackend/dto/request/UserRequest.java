@@ -16,4 +16,7 @@ public class UserRequest {
 
     @NotBlank(message = "Password cannot be blank!")
     private String password;
+
+    @NotBlank(message = "Profile Picture cannot be blank?")
+    private String profilePicture;
 }
