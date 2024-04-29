@@ -34,6 +34,9 @@ public class User extends BaseEntity implements UserDetails {
     @Column(nullable = false)
     private String profilePicture;
 
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "user", cascade = CascadeType.REMOVE)
+    private List<Deck> decks;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role.name()));
