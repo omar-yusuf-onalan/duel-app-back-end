@@ -30,6 +30,7 @@ public class Card extends BaseEntity {
     private String effect;
 
     // Fields that only apply to Monsters
+    @Enumerated(EnumType.STRING)
     private Attribute attribute;
 
     private String types;
@@ -43,5 +44,6 @@ public class Card extends BaseEntity {
     private int rank;
 
     // Fields that only apply to Spells and Traps
+    @Enumerated(EnumType.STRING)
     private Property property;
 }
