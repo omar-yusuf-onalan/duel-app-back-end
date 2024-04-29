@@ -4,14 +4,13 @@ import com.omaryusufonalan.duelappbackend.core.base.BaseEntity;
 import com.omaryusufonalan.duelappbackend.core.enums.Attribute;
 import com.omaryusufonalan.duelappbackend.core.enums.CardType;
 import com.omaryusufonalan.duelappbackend.core.enums.Property;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -46,4 +45,13 @@ public class Card extends BaseEntity {
     // Fields that only apply to Spells and Traps
     @Enumerated(EnumType.STRING)
     private Property property;
+
+    @ManyToMany(mappedBy = "mainDeck")
+    private List<Deck> mainDecks;
+
+    @ManyToMany(mappedBy = "extraDeck")
+    private List<Deck> extraDecks;
+
+    @ManyToMany(mappedBy = "sideDeck")
+    private List<Deck> sideDecks;
 }
