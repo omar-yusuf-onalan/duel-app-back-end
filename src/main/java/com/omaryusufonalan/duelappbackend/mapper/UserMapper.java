@@ -1,6 +1,6 @@
 package com.omaryusufonalan.duelappbackend.mapper;
 
-import com.omaryusufonalan.duelappbackend.core.BaseMapper;
+import com.omaryusufonalan.duelappbackend.core.base.BaseMapper;
 import com.omaryusufonalan.duelappbackend.dto.request.UserRequest;
 import com.omaryusufonalan.duelappbackend.dto.response.UserResponse;
 import com.omaryusufonalan.duelappbackend.entity.User;

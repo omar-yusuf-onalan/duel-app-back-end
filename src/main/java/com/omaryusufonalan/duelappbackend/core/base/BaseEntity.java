@@ -1,4 +1,4 @@
-package com.omaryusufonalan.duelappbackend.core;
+package com.omaryusufonalan.duelappbackend.core.base;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package com.omaryusufonalan.duelappbackend.core;
+package com.omaryusufonalan.duelappbackend.core.base;
 
 import org.mapstruct.MappingTarget;
 import org.mapstruct.Named;

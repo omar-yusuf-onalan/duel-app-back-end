@@ -1,6 +1,6 @@
 package com.omaryusufonalan.duelappbackend.entity;
 
-import com.omaryusufonalan.duelappbackend.core.BaseEntity;
+import com.omaryusufonalan.duelappbackend.core.base.BaseEntity;
 import com.omaryusufonalan.duelappbackend.core.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
