@@ -1,5 +1,6 @@
 package com.omaryusufonalan.duelappbackend.dto.response;
 
+import com.omaryusufonalan.duelappbackend.dto.only.OnlyCardDTO;
 import com.omaryusufonalan.duelappbackend.dto.only.OnlyUserDTO;
 import com.omaryusufonalan.duelappbackend.entity.Card;
 import lombok.AllArgsConstructor;
@@ -18,7 +19,7 @@ public class DeckResponse {
     private String name;
 
     private OnlyUserDTO user;
-    private List<Card> mainDeck;
-    private List<Card> extraDeck;
-    private List<Card> sideDeck;
+    private List<OnlyCardDTO> mainDeck;
+    private List<OnlyCardDTO> extraDeck;
+    private List<OnlyCardDTO> sideDeck;
 }
